@@ -2,7 +2,9 @@
 
 > Cloned from https://github.com/goatslacker/iso
 
-Alt is a super-simple Flux implementation that is able to bootstrap data from the server on initial-load. Currently, like most Flux implementations, it's lacking a possibility for components to fetch data isometrically.
+
+
+[Alt](https://github.com/goatslacker/alt) is a super-simple [flux](http://facebook.github.io/flux/docs/overview.html) implementation that is able to bootstrap data from the server on initial-load. Currently, like most flux implementations, it's lacking a possibility for components to fetch data isometrically.
 
 I've thrown in a data fetching possibility using:
 - Browser-Side: supersonic, requesting the LoopBack API
