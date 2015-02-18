@@ -1,0 +1,29 @@
+{
+  "name": "iso-react-router-flux",
+  "version": "1.0.0",
+  "description": "Isomorphic date/time application with react-router and flux",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t [reactify --harmony] js/client.js > js/bundle.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "MIT",
+  "dependencies": {
+    "alt": "^0.10.2",
+    "express": "^4.11.2",
+    "iso": "^4.0.2",
+    "jade": "^1.8.2",
+    "loopback": "^2.12.1",
+    "loopback-boot": "^2.6.4",
+    "node-jsx": "^0.12.4",
+    "react": "^0.12.2",
+    "react-router": "^0.11.6",
+    "superagent": "^0.21.0"
+  },
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "reactify": "^0.17.1"
+  }
+}
