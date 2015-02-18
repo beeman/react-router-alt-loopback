@@ -2,9 +2,13 @@
 
 > Cloned from https://github.com/goatslacker/iso
 
-I've thrown in an isometric data fetching possibility using:
+Alt is a super-simple Flux implementation that is able to bootstrap data from the server on initial-load. Currently, like most Flux implementations, it's lacking a possibility for components to fetch data isometrically.
+
+I've thrown in a data fetching possibility using:
 - Browser-Side: supersonic, requesting the LoopBack API
 - Server-Side: Loopback
+
+This method is inspired by React-Routers async-data example.
 
 **This is for demo purposes, the code is a bit messy and there are a few bugs/issues**
 
@@ -15,7 +19,7 @@ I've thrown in an isometric data fetching possibility using:
 - ...
 
 Component
-```
+```javascript
 var App = React.createClass({
     statics: {
         fetch: function (params) {
@@ -30,7 +34,7 @@ var App = React.createClass({
 ```
 
 Fetcher
-```
+```javascript
 module.exports = {
     get: (model, filter)=>{
         return new Promise(function(resolve, reject) {
@@ -45,7 +49,7 @@ module.exports = {
 ```
 
 Server-Fetcher
-```
+```javascript
 module.exports = (app)=>{
     Fetcher.get = (model, filter)=>{
         return new Promise(function(resolve, reject) {
