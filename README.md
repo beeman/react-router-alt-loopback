@@ -1,7 +1,10 @@
 # iso-react-router-alt-loopback
 
 > Cloned from https://github.com/goatslacker/iso
-> I've thrown in an isometric data fetching possibility using supersonic on the browser and loopback on the server
+
+I've thrown in an isometric data fetching possibility using:
+- Browser-Side: supersonic, requesting the LoopBack API
+- Server-Side: Loopback
 
 Component
 ```
@@ -47,6 +50,7 @@ module.exports = (app)=>{
     return Fetcher;
 }
 ```
+
 
 ## Running This
 
