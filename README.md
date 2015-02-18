@@ -6,6 +6,14 @@ I've thrown in an isometric data fetching possibility using:
 - Browser-Side: supersonic, requesting the LoopBack API
 - Server-Side: Loopback
 
+**This is for demo purposes, the code is a bit messy and there are a few bugs/issues**
+
+**Todo**
+- Clean everything up
+- Optimize data injection into Alt stores from client (currently an untargeted Action is used)
+- Server-Fetcher isn't currently dynamically using a model
+- ...
+
 Component
 ```
 var App = React.createClass({
@@ -50,7 +58,6 @@ module.exports = (app)=>{
     return Fetcher;
 }
 ```
-
 
 ## Running This
 
